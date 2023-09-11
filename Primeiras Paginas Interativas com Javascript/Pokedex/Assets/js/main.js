@@ -1,5 +1,8 @@
-
-
+const pokemonOl = document.getElementById("pokemonList")
+const buttonPagination = document.getElementById("loadMoreButton")
+const limit = 10
+let offset = 0
+loadPokemonItens(offset,limit)
 function arrayToHtml (pokemon){
     return `
         <li class="pokemon ${pokemon.type}">
@@ -18,12 +21,18 @@ function arrayToHtml (pokemon){
     `
 }
 
-const pokemonOl = document.getElementById("pokemonList")
-
-pokeapi.fetchPokemon().then((pokemonList = []) => {
+function loadPokemonItens(offset,limit){
+    pokeapi.fetchPokemon(offset,limit).then((pokemonList = []) => {
         const newList = pokemonList.map((pokemon) => arrayToHtml(pokemon))
         const newhtml = newList.join('')
         console.log(newhtml)
-        pokemonOl.innerHTML = newhtml 
+        pokemonOl.innerHTML += newhtml 
     } )
     .catch((error) => console.error(error))
+}
+
+
+buttonPagination.addEventListener('click',() => {
+    offset += limit
+    loadPokemonItens(offset,limit)
+})
