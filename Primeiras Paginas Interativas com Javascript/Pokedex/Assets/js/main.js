@@ -1,9 +1,3 @@
-// fetch API to connect to endpoint
-
-const offset = 0
-const limit = 10
-const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
-
 
 function arrayToHtml (pokemon){
     return `
@@ -26,18 +20,10 @@ function arrayToHtml (pokemon){
 
 const pokemonOl = document.getElementById("pokemonList")
 
-
-//it returns a Promisse. It means, it's an assynchronus process
-fetch(url)
-    //not using arrow function: .then(function(response){return response.json})
-    .then((response) =>response.json())
-    .then((jsonBody) => jsonBody.results)
-    .then((pokemonList) => {
-        
-        for (let i = 0; i < pokemonList.length; i++) {
-            const pokemon = pokemonList[i];
-            pokemonOl.innerHTML += arrayToHtml(pokemon)
-        }
-
+pokeapi.fetchPokemon()
+    .then((pokemonList = []) => {
+        const newList = pokemonList.map((pokemon) => arrayToHtml(pokemon))
+        const newhtml = newList.join('')
+        pokemonOl.innerHTML = newhtml 
     } )
     .catch((error) => console.error(error))
