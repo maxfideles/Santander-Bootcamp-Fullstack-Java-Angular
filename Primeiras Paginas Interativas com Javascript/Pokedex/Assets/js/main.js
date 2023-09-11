@@ -1,7 +1,10 @@
 const pokemonOl = document.getElementById("pokemonList")
 const buttonPagination = document.getElementById("loadMoreButton")
+
+const maxItens = 34
 const limit = 10
 let offset = 0
+
 loadPokemonItens(offset,limit)
 function arrayToHtml (pokemon){
     return `
@@ -33,6 +36,20 @@ function loadPokemonItens(offset,limit){
 
 
 buttonPagination.addEventListener('click',() => {
+
     offset += limit
-    loadPokemonItens(offset,limit)
+    const qtTotalLoaded = offset + limit
+
+    if(qtTotalLoaded>=maxItens){
+        const newQtList = maxItens - offset 
+        loadPokemonItens(offset,newQtList)
+
+        buttonPagination.parentElement.removeChild(buttonPagination)
+
+    }else{
+        loadPokemonItens(offset,limit)
+
+    }
+    
+
 })
