@@ -23,7 +23,7 @@ pokeapi.getPokemonDetails = (pokemon) => {
 
 }
 
-pokeapi.fetchPokemon = (offset=0,limit=10) => {
+pokeapi.fetchPokemon = (offset=0,limit=20) => {
     const url = `https://pokeapi.co/api/v2/pokemon/?offset=${offset}&limit=${limit}`
     //fetch returns a Promisse. It means, it's an assynchronus process
     return  fetch(url)
