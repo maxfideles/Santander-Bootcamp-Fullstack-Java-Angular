@@ -1,7 +1,12 @@
-console.log (Sucesso!);
+// fetch API to connect to endpoint
 
-console.log
+const offset = 0
+const limit = 10
+const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 
-var num = 1
-
-console.log(num)
+//it returns a Promisse. It means, it's an assynchronus process
+fetch(url)
+    .then(function(response){
+        console.log(response)
+    })
+console.log('vai curinthia')
