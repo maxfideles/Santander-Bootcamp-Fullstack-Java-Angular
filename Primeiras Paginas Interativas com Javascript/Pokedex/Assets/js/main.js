@@ -6,7 +6,7 @@ const url = `https://pokeapi.co/api/v2/pokemon?offset=${offset}&limit=${limit}`
 
 //it returns a Promisse. It means, it's an assynchronus process
 fetch(url)
-    .then(function(response){
-        console.log(response)
-    })
-console.log('vai curinthia')
+    //not using arrow function: .then(function(response){return response.json})
+    .then((response) =>response.json())
+    .then((jsonBody) => jsonBody)
+    .catch((error) => console.error(error))
