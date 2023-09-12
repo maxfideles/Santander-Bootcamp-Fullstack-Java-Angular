@@ -34,5 +34,5 @@ pokeapi.fetchPokemon = (offset,limit) => {
             .then((detailsRequest) => Promise.all(detailsRequest))
             .then((pokemonDetails) => pokemonDetails)
             .catch((error) => console.error(error))
-
+        
 }
