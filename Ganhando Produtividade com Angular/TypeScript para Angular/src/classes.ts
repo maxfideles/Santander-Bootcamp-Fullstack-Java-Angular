@@ -1,7 +1,7 @@
  class Character {
-    "name": string
-    "strength": number
-    "skill": number
+    private "name": string
+    private "strength": number
+    private "skill": number
  
     constructor(name:string,strength:number,skill:number){
         this.name = name
