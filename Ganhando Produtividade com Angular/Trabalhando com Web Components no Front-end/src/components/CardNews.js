@@ -19,6 +19,7 @@
 
         const linkTitle = document.createElement("a")
         linkTitle.textContent = this.getAttribute("title")
+        linkTitle.href = this.getAttribute("link")
 
         const newsContent = document.createElement("p")
         newsContent.textContent = this.getAttribute("content")
@@ -31,12 +32,14 @@
         cardRight.setAttribute("class","card__right")
 
         const imgNews = document.createElement("img")
-
+        imgNews.src = this.getAttribute("photo") || "https://media.istockphoto.com/id/1327592449/vector/default-avatar-photo-placeholder-icon-grey-profile-picture-business-man.jpg?s=170667a&w=0&k=20&c=qDvsvfQdmm_cvI_BQH4PdIt8-P-VDAq7ufOobicPBu0="
+        imgNews.alt = "News Image"
         cardRight.appendChild(imgNews)
 
 
         componentRoot.appendChild(cardLeft)
         componentRoot.appendChild(cardRight)
+        
         return componentRoot
 
     }
