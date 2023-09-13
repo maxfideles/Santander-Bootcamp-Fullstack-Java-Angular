@@ -8,7 +8,7 @@ class TituloDinamico extends HTMLElement{
         //base component
         // <h1>Max</h1>
         const componentRoot = document.createElement('h1')
-        componentRoot.textContent = 'Max'
+        componentRoot.textContent = this.getAttribute("title")
         
         //component style
         const style = document.createElement('style')
