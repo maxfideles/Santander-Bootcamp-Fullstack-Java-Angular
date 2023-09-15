@@ -1,0 +1,13 @@
+<p>card works!</p>
+<h1 >card works!</h1>
+<button>My App</button>
+
+<ul>
+    <li *ngFor="let p of produtos">{{p}} </li>
+    <button (click)="add()" >Adicionar</button>
+</ul>
+
+Using index - Click on any item below
+<ul>
+    <li  *ngFor="let p of produtos; let i = index" (click)="remove(i)" >{{p}} </li>
+</ul>

@@ -1,0 +1,12 @@
+
+
+<app-card *ngIf="isAliveCard else hiddenBlock"> </app-card>
+
+<ng-template #hiddenBlock>
+  <h3>I'm a hidden block</h3>
+</ng-template>
+
+
+
+<router-outlet></router-outlet>
+ 
