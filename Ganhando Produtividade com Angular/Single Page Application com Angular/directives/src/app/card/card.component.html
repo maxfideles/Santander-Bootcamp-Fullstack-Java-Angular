@@ -11,3 +11,30 @@ Using index - Click on any item below
 <ul>
     <li  *ngFor="let p of produtos; let i = index" (click)="remove(i)" >{{p}} </li>
 </ul>
+
+<div [ngSwitch]="menuType">
+    <div *ngSwitchDefault="'user'">       
+       <ul>
+        <li>editar perfil</li>
+        <li>adicionar cartao</li>
+       </ul> 
+    </div>
+
+    <div *ngSwitchCase="'admin'">  
+        <ul>     
+        <li>editar perfil</li>
+        <li>adicionar cartao</li>
+        <li>gerenciar usuarios</li>
+        </ul>
+    </div>
+
+    <div *ngSwitchCase="'superuser'">  
+        <ul>
+        <li>editar perfil</li>
+        <li>adicionar cartao</li>
+        <li>gerenciar usuarios</li>   
+        <li>gerenciar admins</li>  
+        </ul>
+
+    </div>
+</div>
