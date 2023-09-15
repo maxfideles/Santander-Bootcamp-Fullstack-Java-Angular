@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'lyfe-cycle';
+  isAliveCheckSample: boolean = true
+
+  disposeCheckSample(): void{
+
+    this.isAliveCheckSample = false
+  }
 }

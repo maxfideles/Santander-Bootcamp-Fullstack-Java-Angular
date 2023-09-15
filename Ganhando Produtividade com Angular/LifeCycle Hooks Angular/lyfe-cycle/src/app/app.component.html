@@ -1,6 +1,8 @@
  <h1>My Application</h1>
 
-<app-check-sample></app-check-sample>
+<app-check-sample *ngIf="isAliveCheckSample"></app-check-sample>
+
+<button (click)="disposeCheckSample()">Destroy</button>
  
  <app-title name="Produto1"></app-title>
  <app-title name="Produto2"></app-title>

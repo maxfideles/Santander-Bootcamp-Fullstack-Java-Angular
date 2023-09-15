@@ -4,7 +4,8 @@ import { Component,
    AfterContentChecked,
    AfterContentInit,
    AfterViewChecked,
-   AfterViewInit } from '@angular/core';
+   AfterViewInit,
+  OnDestroy } from '@angular/core';
 
 @Component({
   selector: 'app-check-sample',
@@ -17,7 +18,8 @@ export class CheckSampleComponent
               AfterContentChecked,
               AfterContentInit,
               AfterViewChecked,
-              AfterViewInit   {
+              AfterViewInit,
+              OnDestroy   {
 
     quantity:number = 0
 
@@ -25,6 +27,9 @@ export class CheckSampleComponent
 
   
    }
+  ngOnDestroy(): void {
+    console.log("See ya")
+  }
 
    add(){
     this.quantity += 1
