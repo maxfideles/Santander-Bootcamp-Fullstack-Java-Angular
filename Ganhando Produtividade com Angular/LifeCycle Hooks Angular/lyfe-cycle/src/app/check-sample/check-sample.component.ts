@@ -19,8 +19,22 @@ export class CheckSampleComponent
               AfterViewChecked,
               AfterViewInit   {
 
-  constructor() { }
-  ngAfterContentChecked(): void {
+    quantity:number = 0
+
+  constructor() {
+
+  
+   }
+
+   add(){
+    this.quantity += 1
+   }
+
+   sub(){
+    this.quantity -=1
+   }
+
+   ngAfterContentChecked(): void {
     console.log("ngAfterContentChecked")
   }
   ngAfterContentInit(): void {
@@ -37,6 +51,7 @@ export class CheckSampleComponent
     }
 
   ngOnInit(): void {
+
     console.log("ngOnInit")
 
   }
