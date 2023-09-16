@@ -1,0 +1,23 @@
+
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-list {
+    font-size: small;
+    width: 30rem;
+    justify-content: space-around;
+    align-content: center;
+}
+
+
