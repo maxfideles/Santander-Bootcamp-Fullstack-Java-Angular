@@ -1,25 +1,35 @@
-.conteiner__big-card {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+.conteiner__big-card  {
+    width:40rem;
+    border-radius: 1rem;
     margin-left: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-
+    margin-right: 1rem;
+    
 }
 
-.content > span{
+.conteiner__big-card > *{
+    margin-left: 1rem;
+    text-decoration: none;
+}
+
+.big-card__photo > img{
+    width:100%;
+}
+
+.big-card__title > span{
     margin-top: 1rem;
     margin-bottom: 1rem;
     color: #363636;
     font-weight: lighter;
     display: flex;
-    align-content: start;
 
 }
 
-.content > h1{
+.big-card__title > h1{
     margin-bottom: 2rem;
+    font-size: 1.2rem;
 }
 
-.content > p{
+.big-card__description > p {
     color: #464646;
 }
+

@@ -1,0 +1,30 @@
+.container__small-card-cont{
+    display:flex;
+    flex-direction: row;
+    margin-top: 1rem;
+
+}
+
+.small-card__photo>img{
+    width: 200px;
+    margin-right: 20px;
+}
+
+.small-card__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+   
+}
+
+.small-card__date > span {
+    font-size: small;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: baseline;
+    color: #363636;
+}
+.container__small-card > hr {
+    color: #363636;
+    margin-top: 1rem;
+}
