@@ -4,9 +4,3 @@
     justify-content: center;
     
 }
-
-.menu-bar> *{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}

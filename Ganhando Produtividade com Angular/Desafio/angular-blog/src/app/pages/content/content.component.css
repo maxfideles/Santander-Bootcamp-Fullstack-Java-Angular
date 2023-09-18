@@ -1,0 +1,14 @@
+.container__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.content__cover > img {
+    width: 400px;
+    height: 350px;
+}
+
+.content__description > p {
+    color: #464646;
+}
