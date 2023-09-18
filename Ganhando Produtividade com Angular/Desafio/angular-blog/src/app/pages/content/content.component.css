@@ -10,5 +10,7 @@
 }
 
 .content__description > p {
+    margin-top: 3rem;
     color: #464646;
+    margin: 2rem;
 }
