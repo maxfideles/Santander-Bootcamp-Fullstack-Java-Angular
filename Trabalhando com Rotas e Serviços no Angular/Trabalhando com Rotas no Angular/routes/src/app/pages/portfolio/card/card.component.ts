@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-card',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  private id:string | null=""
+  constructor(private route: ActivatedRoute) { 
+ 
+  }
 
   ngOnInit(): void {
+  //Getting the parameters : http://localhost:4200/portfolio/{1}
+    this.route.paramMap.subscribe(value =>console.log(value.get("id")))
+
+    this.route.queryParams.subscribe(value => console.log(value))
+  
   }
 
 }
