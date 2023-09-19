@@ -2,5 +2,10 @@ export type PokemonData = {
     name:string,
     id:number,
     sprites:any,
-    types: []
+    types: [{
+        slot:number,
+        type:{
+            name:string,
+        }
+    }]
 }
