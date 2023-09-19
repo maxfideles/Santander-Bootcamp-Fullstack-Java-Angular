@@ -1,4 +1,6 @@
 export type PokemonData = {
-    name:"",
-    id:""
+    name:string,
+    id:number,
+    sprites:any,
+    types: []
 }

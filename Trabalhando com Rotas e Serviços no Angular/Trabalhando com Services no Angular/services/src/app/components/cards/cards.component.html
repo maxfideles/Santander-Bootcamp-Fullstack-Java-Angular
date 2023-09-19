@@ -1,11 +1,11 @@
 <div class="container__cards">
 
     <div class="card-title">
-        <span>Balbasaur</span>
+        <span>{{pokemon.name}}</span>
     </div>
     <div class="card-body">
         <div class="card-body-img">
-        <img src="{{pokeImg}}" alt="" widht="40px" height="40px">
+        <img [src]='pokemon.sprites' alt="" widht="40px" height="40px">
         </div>
     </div>
     <div class="card-stats-type">
