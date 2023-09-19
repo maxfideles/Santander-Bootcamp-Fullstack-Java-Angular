@@ -1,0 +1,8 @@
+.container__menu-bar{
+    border: solid salmon 2px ;
+    width:100%;
+    list-style: none;
+    position: fixed;
+    z-index: 90;
+
+}

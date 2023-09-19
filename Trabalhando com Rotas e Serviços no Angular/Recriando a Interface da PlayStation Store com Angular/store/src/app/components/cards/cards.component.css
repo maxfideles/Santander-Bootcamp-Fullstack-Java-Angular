@@ -1,0 +1,16 @@
+.container__cards{
+    border: solid white 2px;
+    width: 90%;
+    margin: auto;
+    
+}
+
+.cards_games {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.cards_games-game{
+    border: solid red 2px;
+}
