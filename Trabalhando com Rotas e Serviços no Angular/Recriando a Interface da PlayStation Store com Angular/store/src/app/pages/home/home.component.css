@@ -5,22 +5,23 @@
     padding-top: 40px;
     text-decoration: none; 
     flex-wrap: wrap; 
-    overflow: hidden;
 }
 
 
 .cards_games {
     display: flex;
-    justify-content: space-around;
     list-style: none;
     flex-wrap: wrap;
+    justify-content: center;
+  
 
 }
 
 .cards_games-game{
-    margin: .5rem;
+    margin: .8rem;
     transition: transform 0.8s;
     border: red;
+    
 
 }
 
