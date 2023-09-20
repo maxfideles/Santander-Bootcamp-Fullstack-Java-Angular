@@ -1,0 +1,29 @@
+.conteiner__home{
+    border: solid white 2px;
+    width: 90%;
+    margin: auto;
+    padding-top: 40px;
+    text-decoration: none; 
+    flex-wrap: wrap; 
+    overflow: hidden;
+}
+
+
+.cards_games {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    flex-wrap: wrap;
+
+}
+
+.cards_games-game{
+    margin: .5rem;
+    transition: transform 0.8s;
+    border: red;
+
+}
+
+.cards_games-game:hover{
+    transform: scale(1.04);
+}

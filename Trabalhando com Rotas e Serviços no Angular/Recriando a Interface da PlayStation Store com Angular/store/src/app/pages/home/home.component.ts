@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {CardsComponent } from 'src/app/components/cards/cards.component'
 
 @Component({
   selector: 'app-home',
