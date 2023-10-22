@@ -3,7 +3,7 @@
 
 ## Description
 
-Based on the iPhone launch video as shown in the link below, build a UML tool of your choice. The layout of the classes and interfaces with the proposal to represent the roles of the iPhone of: **Music Player, Telephone Device and Internet Browser**. Then create the classes and interfaces in the format of .java files
+Based on the iPhone launch video as shown in the link below, build a UML tool of your choice. The layout of the classes and interfaces with the proposal to represent the roles of the iPhone of: **Music Player, Telephone Device and Internet Browser**. Then create the classes and interfaces in the format of .java files.
 
 
 ## UML Diagram
