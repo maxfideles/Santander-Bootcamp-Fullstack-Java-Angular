@@ -1,0 +1,40 @@
+@startuml
+interface MusicPlayer {
+    + play()
+    + pause()
+    + next()
+    + previous()
+    + search(String search)
+}
+
+interface Phone {
+    + call(String number)
+    + pickUpCall()
+    + declineCall()
+}
+
+interface WebBrowser {
+    + newTab()
+    + accessUrl(String url)
+    + refreshPage()
+}
+
+class IPhone {
+    + play()
+    + pause()
+    + next()
+    + previous()
+    + search(String search)
+    + call(String number)
+    + pickUpCall()
+    + declineCall()
+    + newTab()
+    + accessUrl(String url)
+    + refreshPage()
+}
+
+MusicPlayer <|.. IPhone
+Phone <|.. IPhone
+WebBrowser <|.. IPhone
+
+@enduml
